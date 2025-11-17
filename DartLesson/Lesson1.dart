@@ -1,5 +1,3 @@
-import 'dart:io';
-
 void main(){
   var a=10;//var是动态类型，可赋值任意类型,但不可任意变换类型
   const pi=3.14;
