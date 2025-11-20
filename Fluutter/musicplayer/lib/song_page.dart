@@ -2,40 +2,40 @@ import 'package:flutter/material.dart';
 import './neu_box.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
-class SongPage extends StatefulWidget {
+class SongPage extends StatefulWidget {//歌曲详情页的状态组件
   const SongPage({Key? key}) : super(key: key);
 
   @override
   State<SongPage> createState() => _SongPageState();
 }
 
-class _SongPageState extends State<SongPage> {
+class _SongPageState extends State<SongPage> {//歌曲详情页的状态组件
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: SafeArea(
-        child: Padding(
+        child: Padding(//边距
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
-          child: Column(
+          child: Column(//列布局
             children: [
-              const SizedBox(height: 10),
+              const SizedBox(height: 10),//间距
 
               // back button and menu button
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              Row(//行布局
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,//两端对齐
                 children: const [
                   SizedBox(
                     height: 60,
                     width: 60,
-                    child: NeuBox(child: Icon(Icons.arrow_back)),
+                    child: NeuBox(child: Icon(Icons.arrow_back)),//左上角的返回按钮
                   ),
-                  Text('P L A Y L I S T'),
-                  SizedBox(
-                    height: 60,
-                    width: 60,
-                    child: NeuBox(child: Icon(Icons.menu)),
-                  ),
+                  Text('本地音乐'),
+                  // SizedBox(
+                  //   height: 60,
+                  //   width: 60,
+                  //   child: NeuBox(child: Icon(Icons.menu)),
+                  // ),
                 ],
               ),
 
