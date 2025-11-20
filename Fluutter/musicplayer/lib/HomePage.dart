@@ -1,6 +1,18 @@
 import 'song_page.dart';//导入歌曲详情页的状态组件
 import 'package:flutter/material.dart';
 
+class HomePage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title:'本 地 歌 曲',
+      theme:ThemeData(
+        primarySwatch:Colors.grey,
+      ),
+      home:MyHome(),
+    );
+  }
+}
 class MyHome extends StatefulWidget{//状态组件
   @override
   _MyHomeState createState()=>_MyHomeState();//创建状态组件
@@ -80,7 +92,7 @@ class _MyHomeState extends State<MyHome>{
                 )
                 :
                 Image.asset(
-                  'lib/image/default_cover.png',//默认图片
+                  'lib/images/default_cover.png',//默认图片
                   fit:BoxFit.cover,
                 ),
             ),

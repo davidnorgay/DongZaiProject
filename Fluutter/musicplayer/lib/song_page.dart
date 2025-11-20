@@ -17,6 +17,7 @@ class _SongPageState extends State<SongPage> {//歌曲详情页的状态组件
       body: SafeArea(
         child: Padding(//边距
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          
           child: Column(//列布局
             children: [
               const SizedBox(height: 10),//间距
@@ -58,7 +59,7 @@ class _SongPageState extends State<SongPage> {//歌曲详情页的状态组件
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Kota The Friend',
+                                '歌手名称',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
@@ -67,7 +68,7 @@ class _SongPageState extends State<SongPage> {//歌曲详情页的状态组件
                               ),
                               const SizedBox(height: 6),
                               const Text(
-                                'Birdie',
+                                '歌曲名称',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 22,
