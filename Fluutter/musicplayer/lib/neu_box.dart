@@ -10,20 +10,20 @@ class NeuBox extends StatelessWidget {
       child: Center(child: child),
       decoration: BoxDecoration(
         color: Colors.grey[300],
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(15),//圆角
         boxShadow: [
           // darker shadow on the bottom right
           BoxShadow(
             color: Colors.grey.shade500,
-            blurRadius: 15,
-            offset: Offset(5, 5),
+            blurRadius: 7,//模糊半径
+            offset: Offset(3, 3),
           ),
 
           // lighter shadow on the top left
           const BoxShadow(
             color: Colors.white,
-            blurRadius: 15,
-            offset: Offset(-5, -5),
+            blurRadius: 7,//模糊半径
+            offset: Offset(-3, -3),//偏移量
           ),
         ],
       ),
